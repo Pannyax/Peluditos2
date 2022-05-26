@@ -1,0 +1,27 @@
+body {
+    background: url('https://www.xtrafondos.com/wallpapers/retrowave-lineas-montanas-3063.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
+  .bi-instagram{
+    margin: 5%;
+  }
+
+.contacto-contenedor{
+    position: relative;
+    min-height: 100%;
+}
+
+.lol{
+  padding-top: 200px;
+}
+
+.container-footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }

@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="icon" type="image/png" href="./assets/img/logo.png">
+    
+    <title>PELUDITOS</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./assets/img/logo.png" width="30px"> PELUDITOS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tienda
+                <i class="bi bi-shop"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="./productos.html">Productos
+                    <i class="bi bi-tags"></i>
+                  </a>
+              </li>
+                <li>
+                  <a class="dropdown-item" href="./ofertas.html">Ofertas
+                    <i class="bi bi-percent"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./contacto.html">Contacto
+                    <i class="bi bi-person-lines-fill"></i>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Razas
+                <i class="bi bi-lightbulb"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="./razaperros.html">Razas Perros</a></li>
+                <li><a class="dropdown-item" href="./razagatos.html">Razas Gatos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Registrarse
+                <i class="bi bi-person-circle"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="./registro.html">Registrarse</a></li>
+                <li><a class="dropdown-item" href="./login.html">Iniciar Sesión</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">              
+              <a class="nav-link" href="./carro.html">Carro
+                <i class="bi bi-cart"></i>
+              </a> 
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Page Content -->
+    <div class="inicio-contenedor">
+      <div class="container">
+        <div class="card border-0 shadow my-5">
+          <div class="card-body p-5 perro">
+            <div class="container"> <div class=" text-center mt-5 ">
+                <h1 class="text-info">Regístrate</h1>
+                </div>
+                <div class="row text-center">
+                    <div class="col-lg-7 mx-auto">
+                        <div class="card mt-2 mx-auto p-4 bg-light">
+                            <div class="card-body bg-light">
+                                <div class="container">
+                                    <form id="contact-form" role="form">
+                                        <div class="controls">
+                                            <div class="casillas">
+        
+                                                <div class="col-md-6">
+                                                    <div class="form-group"> <label for="form_name">Nombre *</label> <input id="form_name" type="text" name="name" class="form-control" placeholder="Ingrese su Nombre *" required="required" data-error="Firstname is required."> </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group"> <label for="form_lastname">Apellido *</label> <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Ingrese su Apellido *" required="required" data-error="Lastname is required."> </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group"> <label for="form_email">Email *</label> <input id="form_email" type="email" name="email" class="form-control" placeholder="Ingrese su Email *" required="required" data-error="Valid email is required."> </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group"> <label for="form_numero">Nro de telefono *</label> <input id="form_numero" type="text" name="surname" class="form-control" placeholder="Opcional *" > </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group"> <label for="form_password">Contraseña *</label> <input id="form_password" type="password" name="surname" class="form-control" placeholder="Contraseña *" required="required" data-error="Lastname is required."> </div>
+                                                </div>
+                                            </div>
+                                            <div class="row botonmsg">
+                                                <div class="col-md-12 poto "> <input type="submit" class="btn btn-success btn-send pt-2 btn-block " onclick="return enviarformulario(), validarCorreo(form.form_email.value)" value="Registrarse"> </div>
+                                                <div class="col-md-12 poto2 "> <input type="reset" class="btn btn-success btn-send pt-2 btn-block " value="Limpiar"> </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div id="error"> </div>
+                                </div>
+                            </div>
+                        </div> <!-- /.8 -->
+                    </div> <!-- /.row-->
+                </div>
+                </div>
+            </div>
+            </div>
+    </div>
+    
+    <div class="lol">
+      <div class="container-footer">
+        <footer class="text-center text-white" style="background-color: #f1f1f1;">
+          <!-- Grid container -->
+          <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+              <!-- Facebook -->
+              <a 
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                target="_blank"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="bi bi-facebook"></i
+              ></a>
+        
+              <!-- Twitter -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                target="_blank"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="bi bi-twitter"></i
+              ></a>
+        
+              <!-- Google -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                target="_blank"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="bi bi-google"></i
+              ></a>
+        
+              <!-- Instagram -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                target="_blank"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="bi bi-instagram"></i
+              ></a>
+        
+              <!-- Linkedin -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                target="_blank"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="bi bi-linkedin"></i>
+              </a>
+              <!-- Github -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                target="_blank"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="bi bi-github"></i>
+              </a>
+            </section>
+            <!-- Section: Social media -->
+          </div>
+          <!-- Grid container -->
+        
+          <!-- Copyright -->
+          <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-dark" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">AMORPARAELQUELEE.COM </a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+      </div>
+    </div>
+
+
+
+
+    <script>
+      var nombre = document.getElementById("form_name");
+      var apellido = document.getElementById("form_lastname");
+      var email = document.getElementById("form_email");
+      var numero = document.getElementById("form_numero");
+      var password = document.getElementById("form_password");
+      var error = document.getElementById("error");
+
+      error.style.color = 'red';
+
+      
+
+      function enviarformulario(){
+        console.log("Enviando Formulario...");
+
+        var mensajesError = [];
+
+        if(nombre.value === null || nombre.value === '' ){
+          mensajesError.push('Ingrese Nombre');
+        }
+
+        if(apellido.value === null || apellido.value === '' ){
+          mensajesError.push('Ingrese Apellido');
+        }
+
+        if(email.value === null || email.value === '' ){
+          mensajesError.push('Ingrese Email');
+        }
+
+        if(password.value === null || password.value === '' ){
+          mensajesError.push('Ingrese Contraseña');
+        }
+
+        error.innerHTML = mensajesError.join(', ');
+      
+        return false;
+      }
+
+
+      function validarCorreo(email){
+        var expReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+        var esValido = expReg.test(email);
+
+        if(esValido == true){
+          enviarformulario;
+        }
+        else{
+          alert('Email Invalido');
+        }
+      }
+
+
+
+    </script>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+   
+  </body>
+</html>

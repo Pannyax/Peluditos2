@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="{% static 'css/ofertas.css'%}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="{% static 'css/vanilla-zoom.min.css'%}">
+    <link rel="icon" type="image/png" href="{% static 'img/logo.png'%}">
+    
+    <title>PELUDITOS</title>
+  </head>
+
+  <body>
+    {% load static %}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img src="{% static 'img/logo.png'%}" width="30px"> PELUDITOS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tienda
+                <i class="bi bi-shop"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="./productos.html">Productos
+                    <i class="bi bi-tags"></i>
+                  </a>
+              </li>
+                <li>
+                  <a class="dropdown-item" href="./ofertas.html">Ofertas
+                    <i class="bi bi-percent"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./contacto.html">Contacto
+                    <i class="bi bi-person-lines-fill"></i>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Razas
+                <i class="bi bi-lightbulb"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="./razaperros.html">Razas Perros</a></li>
+                <li><a class="dropdown-item" href="./razagatos.html">Razas Gatos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Registrarse
+                <i class="bi bi-person-circle"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="./registro.html">Registrarse</a></li>
+                <li><a class="dropdown-item" href="./login.html">Iniciar Sesión</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">              
+              <a class="nav-link" href="./carro.html">Carro
+                <i class="bi bi-cart"></i>
+              </a> 
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    
+    <!-- Page Content -->
+    <div class="ofertas-contenedor">
+      <div class="container">
+        <div class="card border-0 shadow my-5">
+          <div class="card-body p-5 perro">
+            <main class="page pricing-table-page">
+                <section class="clean-block clean-pricing ">
+                    <div class="container">
+                        <div class="block-heading">
+                            <h1 class="text-info">Suscríbete Para Más Ofertas</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-5 col-lg-4">
+                                <div class="clean-pricing-item">
+                                    <div class="heading">
+                                        <h3>BASICO</h3>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <div class="features">
+                                        <h4><span class="feature">Ofertas:&nbsp;</span><span>Si</span></h4>
+                                        <h4><span class="feature">Duración:&nbsp;</span><span>30 Dias</span></h4>
+                                        <h4><span class="feature">Descuento:&nbsp;</span><span>20%</span></h4>
+                                    </div>
+                                    <div class="price">
+                                        <h4>$24.990</h4>
+                                    </div><button class="btn btn-outline-primary d-block w-100" type="button">COMPRAR AHORA</button>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-lg-4">
+                                <div class="clean-pricing-item">
+                                    <div class="ribbon"><span>Mejor Precio</span></div>
+                                    <div class="heading">
+                                        <h3>PRO</h3>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <div class="features">
+                                        <h4><span class="feature">Ofertas:&nbsp;</span><span>Si</span></h4>
+                                        <h4><span class="feature">Duración:&nbsp;</span><span>60 Dias</span></h4>
+                                        <h4><span class="feature">Descuento:&nbsp;</span><span>30%</span></h4>
+                                    </div>
+                                    <div class="price">
+                                        <h4>$49.990</h4>
+                                    </div><button class="btn btn-primary d-block w-100" type="button">COMPRAR AHORA</button>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-lg-4">
+                                <div class="clean-pricing-item">
+                                    <div class="heading">
+                                        <h3>PREMIUM</h3>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <div class="features">
+                                        <h4><span class="feature">Ofertas:&nbsp;</span><span>Si</span></h4>
+                                        <h4><span class="feature">Duración:&nbsp;</span><span>120 Dias</span></h4>
+                                        <h4><span class="feature">Descuento:&nbsp;</span><span>40%</span></h4>
+                                    </div>
+                                    <div class="price">
+                                        <h4>$99.990</h4>
+                                    </div><button class="btn btn-outline-primary d-block w-100" type="button">COMPRAR AHORA</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <div style="height: 200px"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+          ...
+        </div>
+      </nav> -->
+    <div class="lol">
+      <div class="container-footer">
+        <footer class="text-center text-white" style="background-color: #f1f1f1;">
+          <!-- Grid container -->
+          <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+              <!-- Facebook -->
+              <a 
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                target="_blank"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="bi bi-facebook"></i
+              ></a>
+        
+              <!-- Twitter -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                target="_blank"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="bi bi-twitter"></i
+              ></a>
+        
+              <!-- Google -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                target="_blank"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="bi bi-google"></i
+              ></a>
+        
+              <!-- Instagram -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                target="_blank"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="bi bi-instagram"></i
+              ></a>
+        
+              <!-- Linkedin -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                target="_blank"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="bi bi-linkedin"></i>
+              </a>
+              <!-- Github -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                target="_blank"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="bi bi-github"></i>
+              </a>
+            </section>
+            <!-- Section: Social media -->
+          </div>
+          <!-- Grid container -->
+        
+          <!-- Copyright -->
+          <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-dark" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">AMORPARAELQUELEE.COM </a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="{% static 'js/vanilla-zoom.js'%}"></script>
+    <script src="{% static 'js/theme.js'%}"></script>
+  </body>
+</html>

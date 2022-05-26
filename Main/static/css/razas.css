@@ -1,0 +1,101 @@
+html,body {
+    background: url('https://www.xtrafondos.com/wallpapers/retrowave-lineas-montanas-3063.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
+.perro{
+  background-image: url("https://media.discordapp.net/attachments/729244330597810219/958234491523063825/perro.png" );
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 30%;
+
+}
+
+.texto-perro{
+  width: 70%;
+}
+
+.lead{
+  padding: 2%;
+}
+
+
+.inicio-contenedor{
+  position: relative;
+  min-height: 100%;
+}
+
+.lol{
+  padding-top: 200px;
+}
+
+.container-footer{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.fotos{
+  width: 150px;
+  float:left;
+  margin-left: 10%;
+}
+
+body {
+  background-color: #ff5050;
+  font-family: 'Lato', sans-serif
+}
+
+
+
+label {
+  color: #333
+}
+
+
+.casillas{
+  position: relative;
+  left: 50%;
+  
+}
+
+.form-group{
+  position: relative;
+  right: 50%
+}
+
+.btn-send {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  width: 80%;
+  margin-left: 3px
+}
+
+.help-block.with-errors {
+  color: #ff5050;
+  margin-top: 5px
+}
+
+.card {
+  margin-left: 10px;
+  margin-right: 10px
+}
+.poto{
+  margin-top: auto;
+  text-align: center;
+  padding: 5%;
+}
+.poto2{
+  margin-top: auto;
+  text-align: center;
+  padding: 0%;
+}
+
+#boton1{
+    margin-left: 20px;
+}
