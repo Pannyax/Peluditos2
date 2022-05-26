@@ -1,8 +1,15 @@
 from django.urls import path
-from .views import carro, index, login
+from .views import carro, index, login, contacto, ofertas, productos, razagatos, razaperros, registro
 
 urlpatterns = [
-    path('', index), 
+    path('', index),
+    path('index', index), 
     path('carro', carro),
-    path('login', login)
+    path('login', login),
+    path('contacto', contacto),
+    path('ofertas', ofertas),
+    path('razagatos', razagatos),
+    path('razaperros', razaperros),
+    path('productos', productos),
+    path('registro', registro),
 ]

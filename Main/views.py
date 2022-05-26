@@ -10,4 +10,21 @@ def carro(request):
 
 def login(request):
     return render(request, 'login.html')
-    
+
+def contacto(request):
+    return render(request, 'contacto.html')
+
+def ofertas(request):
+    return render(request, 'ofertas.html')
+
+def productos(request):
+    return render(request, 'productos.html')
+
+def razagatos(request):
+    return render(request, 'razagatos.html')
+
+def razaperros(request):
+    return render(request, 'razaperros.html')
+
+def registro(request):
+    return render(request, 'registro.html')

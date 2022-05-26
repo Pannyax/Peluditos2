@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    {% load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -15,9 +16,10 @@
   </head>
 
   <body>
+    {% load static %}
     <nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow">
       <div class="container">
-        <a class="navbar-brand" href="./index.html">
+        <a class="navbar-brand" href="/index">
           <img src="{% static 'img/logo.png'%}" width="30px"> PELUDITOS</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -25,7 +27,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="./index.html">Inicio</a>
+              <a class="nav-link" href="/index">Inicio</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -34,17 +36,17 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li>
-                  <a class="dropdown-item" href="./productos.html">Productos
+                  <a class="dropdown-item" href="/productos">Productos
                     <i class="bi bi-tags"></i>
                   </a>
               </li>
                 <li>
-                  <a class="dropdown-item" href="./ofertas.html">Ofertas
+                  <a class="dropdown-item" href="/ofertas">Ofertas
                     <i class="bi bi-percent"></i>
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="./contacto.html">Contacto
+                  <a class="dropdown-item" href="/contacto">Contacto
                     <i class="bi bi-person-lines-fill"></i>
                   </a>
                 </li>
@@ -56,8 +58,8 @@
                 <i class="bi bi-lightbulb"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="./razaperros.html">Razas Perros</a></li>
-                <li><a class="dropdown-item" href="./razagatos.html">Razas Gatos</a></li>
+                <li><a class="dropdown-item" href="/razaperros">Razas Perros</a></li>
+                <li><a class="dropdown-item" href="/razagatos">Razas Gatos</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -66,12 +68,12 @@
                 <i class="bi bi-person-circle"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="./registro.html">Registrarse</a></li>
-                <li><a class="dropdown-item" href="./login.html">Iniciar Sesión</a></li>
+                <li><a class="dropdown-item" href="/registro">Registrarse</a></li>
+                <li><a class="dropdown-item" href="/login">Iniciar Sesión</a></li>
               </ul>
             </li>
             <li class="nav-item">              
-              <a class="nav-link" href="./carro.html">Carro
+              <a class="nav-link" href="/carro">Carro
                 <i class="bi bi-cart"></i>
               </a> 
             </li>
@@ -173,7 +175,7 @@
                                     <div class="clean-related-item">
                                         <div class="image"><a href="#"><img class="img-fluid d-block mx-auto" src="https://www.amigales.cl/pub/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/p/h/phantom_1.png"></a></div>
                                         <div class="related-name"><a href="#">Collar rayado de colores</a>
-                                            <div class="rating"><img src="assets/img/star.svg"><img src="assets/img/star.svg"><img src="assets/img/star.svg"><img src="assets/img/star-half-empty.svg"><img src="assets/img/star-empty.svg"></div>
+                                            <div class="rating"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star-half-empty.svg'%}"><img src="{% static 'img/star-empty.svg'%}"></div>
                                             <h4>$5.990</h4>
                                         </div>
                                     </div>
@@ -182,7 +184,7 @@
                                     <div class="clean-related-item">
                                         <div class="image"><a href="#"><img class="img-fluid d-block mx-auto" src="https://www.amigales.cl/pub/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/s/u/sumerpunch_collar_1.jpg"></a></div>
                                         <div class="related-name"><a href="#">Collar diseño de sandía</a>
-                                            <div class="rating"><img src="assets/img/star.svg"><img src="assets/img/star.svg"><img src="assets/img/star.svg"><img src="assets/img/star-half-empty.svg"><img src="assets/img/star-empty.svg"></div>
+                                            <div class="rating"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star-half-empty.svg'%}"><img src="{% static 'img/star-empty.svg'%}"></div>
                                             <h4>$5.000</h4>
                                         </div>
                                     </div>
@@ -191,7 +193,7 @@
                                     <div class="clean-related-item">
                                         <div class="image"><a href="#"><img class="img-fluid d-block mx-auto" src="https://cdn.shopify.com/s/files/1/0185/9786/products/2590-FriscoCollar-CanyonlandsOrange-Large_2500_759ffd8e-63f0-44f1-a9c0-8cf7161ed823.jpg?v=1619229942"></a></div>
                                         <div class="related-name"><a href="#">Collar de cuero</a>
-                                            <div class="rating"><img src="assets/img/star.svg"><img src="assets/img/star.svg"><img src="assets/img/star.svg"><img src="assets/img/star-half-empty.svg"><img src="assets/img/star-empty.svg"></div>
+                                            <div class="rating"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star-half-empty.svg'%}"><img src="{% static 'img/star-empty.svg'%}"></div>
                                             <h4>$9.990</h4>
                                         </div>
                                     </div>
@@ -294,8 +296,8 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="assets/js/vanilla-zoom.js"></script>
-    <script src="assets/js/theme.js"></script>
+    <script src="{% static 'js/vanilla-zoom.js'%}"></script>
+    <script src="{% static 'js/theme.js'%}"></script>
 
     
    
