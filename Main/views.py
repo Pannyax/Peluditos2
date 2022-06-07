@@ -1,9 +1,12 @@
 from django.shortcuts import render
+from .models import Foto
 
 # Create your views here.
 
 def index(request):
-    return render(request, 'index.html')
+    fotos = Foto.objects.all()
+    datos = {'fotos': fotos} #par ordenado de atributo y valor que se van a pasar a la vista
+    return render(request, 'index.html', datos)
 
 def carro(request):
     return render(request, 'carro.html')
