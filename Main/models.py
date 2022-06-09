@@ -33,3 +33,12 @@ class Foto(models.Model):
 
     def __str__(self):
         return self.nombreFoto
+
+class Usuario(models.Model):
+    email = models.EmailField(primary_key=True)
+    nombre = models.CharField(max_length=50)
+    apellido = models.CharField(max_length=50)
+    password = models.CharField(max_length=20)
+
+    def __str__(self):
+        return self.email
