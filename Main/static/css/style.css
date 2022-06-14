@@ -18,21 +18,21 @@ html,body {
   padding: 2%;
 }
 
-
-.inicio-contenedor{
-  position: relative;
+.containerFotosIni{
   min-height: 100%;
+  position: relative;
 }
 
 .lol{
+  position: relative;
   padding-top: 200px;
 }
 
 .container-footer{
   position: relative;
-  right: 0;
   bottom: 0;
   left: 0;
+  right: 0;
 }
 
 .fotos{
@@ -41,55 +41,8 @@ html,body {
   margin-left: 10%;
 }
 
-body {
-  background-color: #ff5050;
-  font-family: 'Lato', sans-serif
-}
-
-
-
 label {
   color: #333
-}
-
-
-.casillas{
-  position: relative;
-  left: 50%;
-  
-}
-
-.form-group{
-  position: relative;
-  right: 50%
-}
-
-.btn-send {
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  width: 80%;
-  margin-left: 3px
-}
-
-.help-block.with-errors {
-  color: #ff5050;
-  margin-top: 5px
-}
-
-.card {
-  margin-left: 10px;
-  margin-right: 10px
-}
-.poto{
-  margin-top: auto;
-  text-align: center;
-  padding: 5%;
-}
-.poto2{
-  margin-top: auto;
-  text-align: center;
-  padding: 0%;
 }
 
 /* CUSTOMIZE THE CAROUSEL

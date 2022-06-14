@@ -10,7 +10,7 @@ html,body {
 
 } */
 
-.ofertas-contenedor{
+.wrapperProductos{
     position: relative;
     min-height: 100%;
 }
@@ -20,7 +20,6 @@ html,body {
 }
 
 .container-footer{
-
     right: 0;
     bottom: 0;
     left: 0;
