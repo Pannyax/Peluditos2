@@ -83,6 +83,7 @@
     
     <!-- Page Content -->
     <div class="contacto-contenedor">
+<<<<<<< HEAD
       <div class="container">
         <div class="card border-0 shadow my-5">
           <div class="card-body p-5 perro">
@@ -109,6 +110,36 @@
                   </section>
               </main>
             <div style="height: 200px"></div>
+=======
+        <div class="container">
+          <div class="card border-0 shadow my-5">
+            <div class="card-body p-5 perro">
+                <main class="page">
+                    <section class="clean-block about-us">
+                        <div class="container">
+                            <div class="block-heading">
+                                <h1 class="text-info text-center" >Acerca de Nosotros</h1>
+                                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+                            </div>
+                            <div class="row justify-content-center">
+                              {% for foto in fotos %}
+                                <div class="col-sm-6 col-lg-4">
+                                    <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="{% static 'img/'%}{{foto.nombreArchivo}}">
+                                        <div class="card-body info">
+                                            <h4 class="card-title">{{foto.nombreFoto}}</h4>
+                                            <p class="card-text">{{foto.descripcion}}</p>
+                                            <div class="icons"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i class="bi bi-twitter"></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </section>
+                </main>
+              <div style="height: 200px"></div>
+          </div>
+>>>>>>> 8af923ff81d4f4023711279477e65f0992fcd5e6
         </div>
       </div>
     </div>
