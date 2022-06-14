@@ -1,19 +1,14 @@
 html,body {
-  background: url('https://www.xtrafondos.com/wallpapers/retrowave-lineas-montanas-3063.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
-
-.perro{
-    background-image: url("https://media.discordapp.net/attachments/729244330597810219/958234491523063825/perro.png" );
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-size: 30%;
-  
+  background-color: white;
   }
+
+/* .perro{
+  background-image: url("https://media.discordapp.net/attachments/729244330597810219/958234491523063825/perro.png" );
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 30%;
+
+} */
 
 .container{
   position:relative;
