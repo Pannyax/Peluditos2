@@ -94,12 +94,11 @@
                               <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
                           </div>
                           <div class="row justify-content-center">
-                            {% for foto in fotos %}
+                            {% for contacto in contactos %}
                               <div class="col-sm-6 col-lg-4">
-                                  <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="{% static 'img/'%}{{foto.nombreArchivo}}">
+                                  <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="{% static 'img/'%}{{contacto.imagenContacto}}">
                                       <div class="card-body info">
-                                          <h4 class="card-title">{{foto.nombreFoto}}</h4>
-                                          <p class="card-text">{{foto.descripcion}}</p>
+                                          <h4 class="card-title">{{contacto.nombreContacto}}</h4>
                                           <div class="icons"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i class="bi bi-twitter"></i></a></div>
                                       </div>
                                   </div>

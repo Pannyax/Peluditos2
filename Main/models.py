@@ -42,3 +42,11 @@ class Usuario(models.Model):
 
     def __str__(self):
         return self.email
+
+class Contacto(models.Model):
+    idContacto = models.IntegerField(primary_key=True)
+    nombreContacto = models.CharField(max_length=200)
+    imagenContacto = models.CharField(max_length=150)
+
+    def __str__(self):
+        return self.idContacto

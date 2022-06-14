@@ -1,6 +1,6 @@
 from http.client import HTTPResponse
 from django.shortcuts import render, redirect
-from .models import Foto, Usuario
+from .models import Foto, Producto, Usuario, Contacto
 
 # Create your views here.
 
@@ -18,15 +18,17 @@ def login(request):
     return render(request, 'login.html', datos)
 
 def contacto(request):
-    fotos = Foto.objects.all()
-    datos = {'fotos': fotos} #par ordenado de atributo y valor que se van a pasar a la vista
+    contactos = Contacto.objects.all()
+    datos = {'contactos': contactos} #par ordenado de atributo y valor que se van a pasar a la vista
     return render(request, 'contacto.html', datos)
 
 def ofertas(request):
     return render(request, 'ofertas.html')
 
 def productos(request):
-    return render(request, 'productos.html')
+    productos = Producto.objects.all()
+    datos = {'productos': productos}
+    return render(request, 'productos.html', datos)
 
 def razagatos(request):
     return render(request, 'razagatos.html')
