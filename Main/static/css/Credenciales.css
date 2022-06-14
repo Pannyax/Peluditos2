@@ -1,0 +1,65 @@
+html, body{
+    background-color: white;
+}
+
+.wrapperCredenciales{
+    position: relative;
+    min-height: 100%;
+}
+
+
+.lol{
+    position: relative;
+
+  }
+  
+.container-footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+label {
+    color: #333
+  }
+  
+.casillas{
+    position: relative;
+    left: 50%; 
+}
+
+.form-group{
+    position: relative;
+    right: 50%
+}
+  
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    width: 80%;
+    margin-left: 3px
+}
+  
+.help-block.with-errors {
+    color: #ff5050;
+    margin-top: 5px
+}
+
+.card {
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+.poto{
+    margin-top: auto;
+    text-align: center;
+    padding: 5%;
+  }
+
+.poto2{
+    margin-top: auto;
+    text-align: center;
+    padding: 0%;
+}

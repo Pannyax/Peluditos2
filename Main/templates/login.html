@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="{% static 'css/style.css'%}" rel="stylesheet">
+    <link href="{% static 'css/Credenciales.css'%}" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="icon" type="image/png" href="{% static 'img/logo.png'%}">
@@ -81,38 +81,39 @@
     </nav>
     
     <!-- Page Content -->
-
-    <div class="container"> <div class=" text-center mt-5 ">
-      <h1 class="text-info">Inicia Sesión</h1>
-      </div>
-      <div class="row text-center">
-          <div class="col-lg-7 mx-auto">
-              <div class="card mt-2 mx-auto p-4 bg-light">
-                  <div class="card-body bg-light">
-                      <div class="container">
-                          <form id="contact-form" role="form" action="/validarUsuario">
-                              <div class="controls">
-                                  <div class="casillas">
-                                    <div class="col-md-6">
-                                      <div class="form-group"> <label for="form_email">Email *</label> <input id="form_email" type="email" name="email" class="form-control" placeholder="Ingrese su Email *" required="required" data-error="Valid email is required."> </div>
+    <div class="wrapperCredenciales">
+      <div class="container"> <div class=" text-center mt-5 ">
+        <h1 class="text-info">Inicia Sesión</h1>
+        </div>
+        <div class="row text-center">
+            <div class="col-lg-7 mx-auto">
+                <div class="card mt-2 mx-auto p-4 bg-light">
+                    <div class="card-body bg-light">
+                        <div class="container">
+                            <form id="contact-form" role="form" action="/validarUsuario">
+                                <div class="controls">
+                                    <div class="casillas">
+                                      <div class="col-md-6">
+                                        <div class="form-group"> <label for="form_email">Email *</label> <input id="form_email" type="email" name="email" class="form-control" placeholder="Ingrese su Email *" required="required" data-error="Valid email is required."> </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="form-group"> <label for="form_password">Contraseña *</label> <input id="form_password" type="password" name="surname" class="form-control" placeholder="Contraseña *" required="required" data-error="Lastname is required."> </div>
+                                      </div>
                                     </div>
-                                    <div class="col-md-6">
-                                      <div class="form-group"> <label for="form_password">Contraseña *</label> <input id="form_password" type="password" name="surname" class="form-control" placeholder="Contraseña *" required="required" data-error="Lastname is required."> </div>
+                                    <div class="row botonmsg">
+                                        <div class="col-md-12 poto "> <input type="submit" class="btn btn-success btn-send pt-2 btn-block " onclick="return enviarformulario(), validarCorreo(form.form_email.value)" value="Iniciar Sesión"> </div>
+                                        <div class="col-md-12 poto2 "> <input type="reset" class="btn btn-success btn-send pt-2 btn-block " value="Limpiar"> </div>
                                     </div>
-                                  </div>
-                                  <div class="row botonmsg">
-                                      <div class="col-md-12 poto "> <input type="submit" class="btn btn-success btn-send pt-2 btn-block " onclick="return enviarformulario(), validarCorreo(form.form_email.value)" value="Iniciar Sesión"> </div>
-                                      <div class="col-md-12 poto2 "> <input type="reset" class="btn btn-success btn-send pt-2 btn-block " value="Limpiar"> </div>
-                                  </div>
-                              </div>
-                          </form>
-                          <div id="error"> </div>
-                      </div>
-                  </div>
-              </div> <!-- /.8 -->
-          </div> <!-- /.row-->
+                                </div>
+                            </form>
+                            <div id="error"> </div>
+                        </div>
+                    </div>
+                </div> <!-- /.8 -->
+            </div> <!-- /.row-->
+        </div>
       </div>
-    </div>
+  </div>
     
     <div class="lol">
       <div class="container-footer">
