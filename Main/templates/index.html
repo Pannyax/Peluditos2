@@ -82,102 +82,102 @@
     
     
     <!-- Page Content -->
-
+    <div class="WrapperIndex"> 
       <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#f1f1f1"/></svg>
+
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <a><img src="{% static 'img/wenomechainsama.png'%}" width="100%" height="100%"></a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#f1f1f1"/></svg>
+
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <a><img src="{% static 'img/tumajarbisaun.png'%}" width="100%" height="100%"></a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#f1f1f1"/></svg>
+
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <a><img src="{% static 'img/wifenlooof.png'%}" width="100%" height="100%"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#F9F0F0"/></svg>
 
+    
         <div class="container">
-          <div class="carousel-caption text-start">
-            <a><img src="{% static 'img/foto1.png'%}" width="100%" height="100%"></a>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#F9F0F0"/></svg>
-
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <a><img src="{% static 'img/foto1.png'%}" width="100%" height="100%"></a>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#F9F0F0"/></svg>
-
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <a><img src="{% static 'img/foto1.png'%}" width="100%" height="100%"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-  <div class="containerFotosIni"> 
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-sm-6 col-lg-4">
+          <div class="row justify-content-center">
+            <div class="col-sm-6 col-lg-4">
+                <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="{% static 'img/john.jpg'%}">
+                    <div class="card-body info">
+                        <h4 class="card-title">John Cena</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
               <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="{% static 'img/john.jpg'%}">
                   <div class="card-body info">
                       <h4 class="card-title">John Cena</h4>
                   </div>
               </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="{% static 'img/john.jpg'%}">
-                <div class="card-body info">
-                    <h4 class="card-title">John Cena</h4>
-                </div>
             </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="{% static 'img/john.jpg'%}">
-                <div class="card-body info">
-                    <h4 class="card-title">John Cena</h4>
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4">
               <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="{% static 'img/john.jpg'%}">
                   <div class="card-body info">
                       <h4 class="card-title">John Cena</h4>
                   </div>
               </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="{% static 'img/john.jpg'%}">
-                <div class="card-body info">
-                    <h4 class="card-title">John Cena</h4>
-                </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4">
-            <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="{% static 'img/john.jpg'%}">
-                <div class="card-body info">
-                    <h4 class="card-title">John Cena</h4>
+          <div class="row justify-content-center">
+            <div class="col-sm-6 col-lg-4">
+                <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="{% static 'img/john.jpg'%}">
+                    <div class="card-body info">
+                        <h4 class="card-title">John Cena</h4>
+                    </div>
                 </div>
             </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="{% static 'img/john.jpg'%}">
+                  <div class="card-body info">
+                      <h4 class="card-title">John Cena</h4>
+                  </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="{% static 'img/john.jpg'%}">
+                  <div class="card-body info">
+                      <h4 class="card-title">John Cena</h4>
+                  </div>
+              </div>
+            </div>
           </div>
-        </div>
+      </div>
     </div>
-  </div>     
     <div class="lol">
       <div class="container-footer">
         <footer class="text-center text-white" style="background-color: #f1f1f1;">

@@ -84,48 +84,49 @@
     
     
     <!-- Page Content -->
-
-    <div class="container items">
-      <div class="row justify-content-center">
-        {% for producto in productos %}
+    <div class="wrapperProductos">
+      <div class="container items">
+        <div class="row justify-content-center">
+          {% for producto in productos %}
+            <div class="col-sm-6 col-lg-4">
+                <div class="clean-related-item">
+                    <div class="image"><a href="#"><img class="img-fluid d-block mx-auto" src="{% static 'img/'%}{{producto.imagenProducto}}"></a></div>
+                    <div class="related-name"><a href="#">{{producto.nombreProducto}}</a>
+                        <div class="rating"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star-half-empty.svg'%}"><img src="{% static 'img/star-empty.svg'%}"></div>
+                        <h4>${{producto.precioProducto}}</h4>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="row justify-content-center">
           <div class="col-sm-6 col-lg-4">
               <div class="clean-related-item">
-                  <div class="image"><a href="#"><img class="img-fluid d-block mx-auto" src="{% static 'img/'%}{{producto.imagenProducto}}"></a></div>
-                  <div class="related-name"><a href="#">{{producto.nombreProducto}}</a>
+                  <div class="image"><a href="#"><img class="img-fluid d-block mx-auto" src="https://www.amigales.cl/pub/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/p/h/phantom_1.png"></a></div>
+                  <div class="related-name"><a href="#">Collar rayado de colores</a>
                       <div class="rating"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star-half-empty.svg'%}"><img src="{% static 'img/star-empty.svg'%}"></div>
-                      <h4>${{producto.precioProducto}}</h4>
+                      <h4>$5.990</h4>
                   </div>
               </div>
           </div>
-          {% endfor %}
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-sm-6 col-lg-4">
-            <div class="clean-related-item">
-                <div class="image"><a href="#"><img class="img-fluid d-block mx-auto" src="https://www.amigales.cl/pub/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/p/h/phantom_1.png"></a></div>
-                <div class="related-name"><a href="#">Collar rayado de colores</a>
-                    <div class="rating"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star-half-empty.svg'%}"><img src="{% static 'img/star-empty.svg'%}"></div>
-                    <h4>$5.990</h4>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            <div class="clean-related-item">
-                <div class="image"><a href="#"><img class="img-fluid d-block mx-auto" src="https://www.amigales.cl/pub/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/s/u/sumerpunch_collar_1.jpg"></a></div>
-                <div class="related-name"><a href="#">Collar diseño de sandía</a>
-                    <div class="rating"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star-half-empty.svg'%}"><img src="{% static 'img/star-empty.svg'%}"></div>
-                    <h4>$5.000</h4>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-lg-4">
-            <div class="clean-related-item">
-                <div class="image"><a href="#"><img class="img-fluid d-block mx-auto" src="https://cdn.shopify.com/s/files/1/0185/9786/products/2590-FriscoCollar-CanyonlandsOrange-Large_2500_759ffd8e-63f0-44f1-a9c0-8cf7161ed823.jpg?v=1619229942"></a></div>
-                <div class="related-name"><a href="#">Collar de cuero</a>
-                    <div class="rating"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star-half-empty.svg'%}"><img src="{% static 'img/star-empty.svg'%}"></div>
-                    <h4>$9.990</h4>
-                </div>
-            </div>
+          <div class="col-sm-6 col-lg-4">
+              <div class="clean-related-item">
+                  <div class="image"><a href="#"><img class="img-fluid d-block mx-auto" src="https://www.amigales.cl/pub/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/s/u/sumerpunch_collar_1.jpg"></a></div>
+                  <div class="related-name"><a href="#">Collar diseño de sandía</a>
+                      <div class="rating"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star-half-empty.svg'%}"><img src="{% static 'img/star-empty.svg'%}"></div>
+                      <h4>$5.000</h4>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+              <div class="clean-related-item">
+                  <div class="image"><a href="#"><img class="img-fluid d-block mx-auto" src="https://cdn.shopify.com/s/files/1/0185/9786/products/2590-FriscoCollar-CanyonlandsOrange-Large_2500_759ffd8e-63f0-44f1-a9c0-8cf7161ed823.jpg?v=1619229942"></a></div>
+                  <div class="related-name"><a href="#">Collar de cuero</a>
+                      <div class="rating"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star-half-empty.svg'%}"><img src="{% static 'img/star-empty.svg'%}"></div>
+                      <h4>$9.990</h4>
+                  </div>
+              </div>
+          </div>
         </div>
       </div>
     </div>
