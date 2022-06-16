@@ -5,8 +5,8 @@ from .models import Foto, Producto, Usuario, Contacto
 # Create your views here.
 
 def index(request):
-    fotos = Foto.objects.all()
-    datos = {'fotos': fotos} #par ordenado de atributo y valor que se van a pasar a la vista
+    productos = Producto.objects.all()
+    datos = {'productos': productos} #par ordenado de atributo y valor que se van a pasar a la vista
     return render(request, 'index.html', datos)
 
 def carro(request):
