@@ -90,7 +90,8 @@
                 <div class="card mt-2 mx-auto p-4 bg-light">
                     <div class="card-body bg-light">
                         <div class="container">
-                            <form id="contact-form" role="form" action="/validarUsuario">
+                            <form class="form-signin" id="contact-form" role="form" action="/validarusuario" method="post" name="login">
+                              {% csrf_token %}
                                 <div class="controls">
                                     <div class="casillas">
                                       <div class="col-md-6">
