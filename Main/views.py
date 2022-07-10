@@ -45,16 +45,18 @@ def addproductos(request):
     return render(request, 'addproductos.html', datos)
 
 def validarUsuario(request):
-    v_email=request.POST.get('email')
-    v_password=request.POST.get('password')
-
-    usu=Usuario.objects.get(email=v_email, password=v_password)
-
+    # Recibimos los datos del formulario via POST
+    v_correo = request.POST.get('email')
+    v_pass = request.POST.get('password')
+   
     try:
+    #Buscamos el usuario en la base de datos
+        usu=Usuario.objects.get(email=v_correo, password=v_pass)
+        
         if usu:
-            request.session['usuario'] =v_email
+            request.session['usuario'] = v_correo
             return redirect('/index')
-    
+
     except:
         return redirect('/index')
 
