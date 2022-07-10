@@ -39,8 +39,10 @@ def razaperros(request):
 def registro(request):
     return render(request, 'registro.html')
 
-def album(request):
-    return render(request, 'album.html')
+def addproductos(request):
+    productos = Producto.objects.all()
+    datos = {'productos': productos}
+    return render(request, 'addproductos.html', datos)
 
 def validarUsuario(request):
     v_email=request.POST.get('email')
@@ -53,3 +55,49 @@ def validarUsuario(request):
         return redirect('index')
 
     return HTTPResponse('Hola tu email es:' + v_email)
+
+def guardarProducto(request):
+
+    v_idproducto=request.POST.get('idproducto')
+    v_nomproducto=request.POST.get('nombre')
+    v_imgproducto=request.POST.get('imagen')
+    v_preproducto=request.POST.get('precio')
+    v_stockproducto=request.POST.get('stock')
+
+    nuevo=Producto()
+    nuevo.idProducto=v_idproducto
+    nuevo.nombreProducto=v_nomproducto
+    nuevo.imagenProducto=v_imgproducto
+    nuevo.stockProducto=v_stockproducto
+    nuevo.precioProducto=v_preproducto
+
+    Producto.save(nuevo)
+
+    return redirect('/addproductos')
+
+def eliminarProducto(request, p_idProducto):
+    buscando=Producto.objects.get(idProducto=p_idProducto)
+    if(buscando):
+        Producto.delete(buscando)
+        return redirect('/addproductos')
+
+def buscarProducto(request, p_idProducto):
+    buscando=Producto.objects.get(idProducto=p_idProducto)
+    datos={'producto': buscando}
+    return render(request, 'modificar.html', datos)
+
+def guardarProductoModificado(request):
+    v_idproducto=request.POST.get('idproducto')
+    v_nomproducto=request.POST.get('nombre')
+    v_preproducto=request.POST.get('precio')
+    v_stockproducto=request.POST.get('stock')
+
+    buscando=Producto.objects.get(idProducto=v_idproducto)
+
+    if(buscando):
+        buscando.nombreProducto=v_nomproducto
+        buscando.stockProducto=v_stockproducto
+        buscando.precioProducto=v_preproducto
+
+        Producto.save(buscando)
+        return redirect('/addproductos')

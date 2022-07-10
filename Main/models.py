@@ -18,7 +18,6 @@ class Producto(models.Model):
     imagenProducto =models.CharField(max_length=150, verbose_name='Imagen del Producto')
     precioProducto =models.IntegerField(verbose_name='Precio del Producto')
     stockProducto =models.IntegerField(verbose_name='Stock del Producto')
-    categoriaProducto =models.ForeignKey(Categoria, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.nombreProducto
