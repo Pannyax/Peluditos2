@@ -50,11 +50,13 @@ def validarUsuario(request):
 
     usu=Usuario.objects.get(email=v_email, password=v_password)
 
-    if usu:
-        request.session['usuario'] =v_email
-        return redirect('index')
-
-    return HTTPResponse('Hola tu email es:' + v_email)
+    try:
+        if usu:
+            request.session['usuario'] =v_email
+            return redirect('/index')
+    
+    except:
+        return redirect('/index')
 
 def guardarProducto(request):
 
