@@ -13,7 +13,7 @@ urlpatterns = [
     path('razaperros', razaperros),
     path('productos', productos),
     path('registro', registro),
-    path('validarUsuario', validarUsuario),
+    path('validarUsuario/', validarUsuario),
     path('addproductos', addproductos),
     path('guardarProducto/', guardarProducto),
     path('guardarProductoCambiado/', guardarProductoModificado),

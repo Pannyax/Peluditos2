@@ -1,6 +1,6 @@
 from http.client import HTTPResponse
 from django.shortcuts import render, redirect
-from .models import Foto, Producto, Usuario, Contacto
+from .models import Producto, Usuario, Contacto
 
 # Create your views here.
 
@@ -46,19 +46,19 @@ def addproductos(request):
 
 def validarUsuario(request):
     # Recibimos los datos del formulario via POST
-    v_correo = request.POST.get('email')
-    v_pass = request.POST.get('password')
+    v_email = request.POST.get('email')
+    v_password = request.POST.get('password')
    
     try:
     #Buscamos el usuario en la base de datos
-        usu=Usuario.objects.get(email=v_correo, password=v_pass)
+        usu=Usuario.objects.get(email=v_email, password=v_password)
         
         if usu:
-            request.session['usuario'] = v_correo
+            request.session['usuario'] = v_email
             return redirect('/index')
 
     except:
-        return redirect('/index')
+        return redirect('/login')
 
 def guardarProducto(request):
 
@@ -105,3 +105,4 @@ def guardarProductoModificado(request):
 
         Producto.save(buscando)
         return redirect('/addproductos')
+        

@@ -98,7 +98,8 @@
                     <div class="image"><a href="#"><img class="img-fluid d-block mx-auto" src="{% static 'img/'%}{{producto.imagenProducto}}"></a></div>
                     <div class="related-name"><a href="#">{{producto.nombreProducto}}</a>
                         <div class="rating"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star.svg'%}"><img src="{% static 'img/star-half-empty.svg'%}"><img src="{% static 'img/star-empty.svg'%}"></div>
-                        <h4>${{producto.precioProducto}}</h4>
+                        <h3>${{producto.precioProducto}}</h3>
+                        <h5>Stock: {{producto.stockProducto}}</h5>
                         <button class="btn btn-primary pull-right" type="button">
                           Agregar al carro
                         </button>
