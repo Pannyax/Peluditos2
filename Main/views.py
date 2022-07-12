@@ -33,6 +33,9 @@ def productos(request):
 def razagatos(request):
     return render(request, 'razagatos.html')
 
+def prueba(request):
+    return render(request, 'prueba.html')
+
 def razaperros(request):
     return render(request, 'razaperros.html')
 
@@ -55,10 +58,10 @@ def validarUsuario(request):
         
         if usu:
             request.session['usuario'] = v_email
-            return redirect('/index')
+            return redirect('/addproductos')
 
     except:
-        return redirect('/login')
+        return redirect('/index')
 
 def guardarProducto(request):
 
